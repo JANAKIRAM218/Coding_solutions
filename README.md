@@ -1,2 +1,2 @@
-# AtCoder-Solutions
-My AtCoder problem solutions
+# Coding-Solutions
+My DSA problem solutions
