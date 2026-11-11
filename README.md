@@ -1,6 +1,4 @@
-
-cat > README.md <<'EOF'
-# 💻 DSA Practice | Consistency Tracker
+# DSA Practice | Consistency Tracker
 
 Tracking my journey of consistently solving Data Structures and Algorithms problems across multiple coding platforms.
 
