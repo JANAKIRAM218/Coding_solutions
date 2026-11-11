@@ -1,27 +1,58 @@
+
 cat > README.md <<'EOF'
 # 💻 DSA Practice | Consistency Tracker
 
-Documenting my journey of consistently practicing Data Structures and Algorithms across multiple coding platforms.
+Tracking my journey of consistently solving Data Structures and Algorithms problems across multiple coding platforms.
 
-### 🌐 Coding Platforms
+My goal is to improve problem-solving skills, strengthen algorithmic thinking, and maintain consistency through regular practice.
 
-- [AtCoder](https://atcoder.jp/) – Competitive Programming
-- [NxtWave](https://www.ccbp.in/) – DSA Practice
+## 🌐 Coding Platforms
 
-### 🔥 My DSA Consistency
+| Platform | Profile | Status |
+|---|---|---|
+| AtCoder | [janakiram218](https://atcoder.jp/users/janakiram218) | Integrated |
+| Codeforces | [Ram-](https://codeforces.com/profile/Ram-) | Integrated |
+| LeetCode | [Janakiram1700](https://leetcode.com/u/Janakiram1700/) | Integrated |
+| CodeChef | [Profile](https://www.codechef.com/) | Planned |
+| NxtWave | [NxtWave](https://www.ccbp.in/) | Planned |
+| HackerRank | [Profile](https://www.hackerrank.com/) | Planned |
+| GeeksforGeeks | [Profile](https://www.geeksforgeeks.org/) | Planned |
 
-Tracking my coding activity specifically in this repository.
+## 🔥 My DSA Consistency
+
+A unified coding activity calendar across my coding platforms.
 
 ![DSA Consistency Heatmap](./assets/heatmap.svg)
 
-*Updated automatically using GitHub Actions.*
+*Multi-platform submission synchronization is under development.*
 
-### 📁 Repository Structure
+## 📊 Project Features
+
+- Multi-platform submission tracking.
+- Unified DSA activity heatmap.
+- Daily coding activity statistics.
+- Platform-wise problem-solving statistics.
+- Automatic activity synchronization.
+- Historical practice tracking.
+
+## 📁 Repository Structure
 
 ```text
 Coding_solutions/
 ├── atcoder/
 ├── nxtwave/
-├── assets/
+├── collectors/
+├── config/
+├── data/
 ├── scripts/
-└── README.md
+├── assets/
+├── tests/
+└── .github/
+    └── workflows/
+```
+
+## 🎯 Goal
+
+Stay consistent, improve problem-solving skills, and become stronger at competitive programming.
+
+**Consistency over intensity. One problem at a time.**

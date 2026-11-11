@@ -1,0 +1,30 @@
+{
+  "atcoder": {
+    "enabled": true,
+    "username": "janakiram218"
+  },
+  "codeforces": {
+    "enabled": true,
+    "username": "Ram-"
+  },
+  "leetcode": {
+    "enabled": true,
+    "username": "Janakiram1700"
+  },
+  "codechef": {
+    "enabled": false,
+    "username": ""
+  },
+  "nxtwave": {
+    "enabled": false,
+    "username": ""
+  },
+  "hackerrank": {
+    "enabled": false,
+    "username": ""
+  },
+  "geeksforgeeks": {
+    "enabled": false,
+    "username": ""
+  }
+}
