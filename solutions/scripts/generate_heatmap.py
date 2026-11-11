@@ -1,4 +1,3 @@
-
 import subprocess
 from collections import Counter
 from datetime import date, timedelta
@@ -9,13 +8,13 @@ today = date.today()
 start = today - timedelta(days=364)
 start -= timedelta(days=start.weekday())
 
-# Count commits affecting only DSA solution folders
+# Count commits affecting only DSA solution folders.
 result = subprocess.run(
     [
         "git", "log", "--all",
         "--format=%cs",
         "--since=1 year ago",
-        "--", "atcoder", "nxtwave"
+        "--", "solutions/atcoder", "solutions/nxtwave"
     ],
     capture_output=True,
     text=True,
@@ -78,9 +77,9 @@ text {{
 </g>
 </svg>'''
 
-Path("assets").mkdir(exist_ok=True)
+Path("solutions/assets").mkdir(parents=True, exist_ok=True)
 
-Path("assets/heatmap.svg").write_text(
+Path("solutions/assets/heatmap.svg").write_text(
     svg,
     encoding="utf-8"
 )

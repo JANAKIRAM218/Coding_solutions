@@ -20,7 +20,7 @@ My goal is to improve problem-solving skills, strengthen algorithmic thinking, a
 
 A unified coding activity calendar across my coding platforms.
 
-![DSA Consistency Heatmap](./assets/heatmap.svg)
+![DSA Consistency Heatmap](./solutions/assets/heatmap.svg)
 
 *Multi-platform submission synchronization is under development.*
 
@@ -37,17 +37,21 @@ A unified coding activity calendar across my coding platforms.
 
 ```text
 Coding_solutions/
-├── atcoder/
-├── nxtwave/
-├── collectors/
-├── config/
-├── data/
-├── scripts/
-├── assets/
-├── tests/
+├── README.md
+├── solutions/
+│   ├── atcoder/
+│   ├── nxtwave/
+│   ├── collectors/
+│   ├── config/
+│   ├── data/
+│   ├── scripts/
+│   └── assets/
 └── .github/
     └── workflows/
+        └── heatmap.yml
 ```
+
+GitHub Actions workflows remain in `.github/workflows/` at the repository root so scheduled and push-triggered automation continues to work.
 
 ## 🎯 Goal
 
