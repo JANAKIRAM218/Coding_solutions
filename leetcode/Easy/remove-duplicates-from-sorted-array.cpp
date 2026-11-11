@@ -1,10 +1,11 @@
 // Problem: Remove Duplicates from Sorted Array
 // Platform: leetcode
+// Contest: Easy
 // Rating/Difficulty: Easy
-// Language: cpp
+// Language: unknown
 // Verdict: Accepted
-// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-// Solved on: 2026-11-11T04:31:25.388Z
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2070853595/
+// Solved on: 2026-11-11T04:31:51.516Z
 
 class Solution {
 public:
