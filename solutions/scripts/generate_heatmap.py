@@ -14,7 +14,7 @@ result = subprocess.run(
         "git", "log", "--all",
         "--format=%cs",
         "--since=1 year ago",
-        "--", "solutions/atcoder", "solutions/nxtwave"
+        "--", "solutions/atcoder", "solutions/nxtwave", "atcoder", "nxtwave"
     ],
     capture_output=True,
     text=True,
