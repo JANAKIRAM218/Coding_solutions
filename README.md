@@ -12,7 +12,7 @@ My goal is to improve problem-solving skills, strengthen algorithmic thinking, a
 | Codeforces | [Ram-](https://codeforces.com/profile/Ram-) | Integrated |
 | LeetCode | [Janakiram1700](https://leetcode.com/u/Janakiram1700/) | Integrated |
 | CodeChef | [Profile](https://www.codechef.com/) | Planned |
-| NxtWave | [NxtWave](https://www.ccbp.in/) | Planned |
+| NxtWave | [NxtWave](https://www.ccbp.in/) | Integrated |
 | HackerRank | [Profile](https://www.hackerrank.com/) | Planned |
 | GeeksforGeeks | [Profile](https://www.geeksforgeeks.org/) | Planned |
 
@@ -20,7 +20,7 @@ My goal is to improve problem-solving skills, strengthen algorithmic thinking, a
 
 A unified coding activity calendar across my coding platforms.
 
-![DSA Consistency Heatmap](./solutions/assets/heatmap.svg)
+![DSA Consistency Heatmap](./solutions/_tracker/assets/heatmap.svg)
 
 *Multi-platform submission synchronization is under development.*
 
@@ -39,19 +39,25 @@ A unified coding activity calendar across my coding platforms.
 Coding_solutions/
 ├── README.md
 ├── solutions/
-│   ├── atcoder/
-│   ├── nxtwave/
-│   ├── collectors/
-│   ├── config/
-│   ├── data/
-│   ├── scripts/
-│   └── assets/
+│   ├── AtCoder/
+│   ├── Codeforces/
+│   ├── LeetCode/
+│   ├── CodeChef/
+│   ├── NxtWave/
+│   ├── HackerRank/
+│   ├── GeeksforGeeks/
+│   └── _tracker/
+│       ├── assets/
+│       ├── collectors/
+│       ├── config/
+│       ├── data/
+│       └── scripts/
 └── .github/
     └── workflows/
         └── heatmap.yml
 ```
 
-GitHub Actions workflows remain in `.github/workflows/` at the repository root so scheduled and push-triggered automation continues to work.
+Each platform has its own folder under `solutions/`. Tracker utilities and generated assets are kept separately in `solutions/_tracker/`. GitHub Actions workflows remain in `.github/workflows/` at the repository root so automation continues to run.
 
 ## 🎯 Goal
 

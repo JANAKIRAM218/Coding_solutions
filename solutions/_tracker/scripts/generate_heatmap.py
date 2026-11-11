@@ -8,13 +8,25 @@ today = date.today()
 start = today - timedelta(days=364)
 start -= timedelta(days=start.weekday())
 
-# Count commits affecting only DSA solution folders.
+# Count commits affecting platform solution directories, including
+# the original paths so Git history from before reorganization remains visible.
 result = subprocess.run(
     [
         "git", "log", "--all",
         "--format=%cs",
         "--since=1 year ago",
-        "--", "solutions/atcoder", "solutions/nxtwave", "atcoder", "nxtwave"
+        "--",
+        "solutions/AtCoder",
+        "solutions/NxtWave",
+        "solutions/Codeforces",
+        "solutions/LeetCode",
+        "solutions/CodeChef",
+        "solutions/HackerRank",
+        "solutions/GeeksforGeeks",
+        "solutions/atcoder",
+        "solutions/nxtwave",
+        "atcoder",
+        "nxtwave"
     ],
     capture_output=True,
     text=True,
@@ -40,15 +52,10 @@ cells = []
 for day_offset in range((today - start).days + 1):
     current = start + timedelta(days=day_offset)
     count = commits[current]
-
     level = 0 if count == 0 else min(4, count)
-
     x = day_offset // 7
     y = day_offset % 7
-
-    tooltip = html.escape(
-        f"{count} commits on {current.isoformat()}"
-    )
+    tooltip = html.escape(f"{count} commits on {current.isoformat()}")
 
     cells.append(
         f'<rect x="{x * 13}" y="{y * 13}" '
@@ -77,12 +84,9 @@ text {{
 </g>
 </svg>'''
 
-Path("solutions/assets").mkdir(parents=True, exist_ok=True)
-
-Path("solutions/assets/heatmap.svg").write_text(
-    svg,
-    encoding="utf-8"
-)
+assets_dir = Path("solutions/_tracker/assets")
+assets_dir.mkdir(parents=True, exist_ok=True)
+(assets_dir / "heatmap.svg").write_text(svg, encoding="utf-8")
 
 print("DSA heatmap generated successfully!")
 print(f"Total active days: {sum(v > 0 for v in commits.values())}")
