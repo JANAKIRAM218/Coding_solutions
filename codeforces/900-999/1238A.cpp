@@ -5,7 +5,7 @@
 // Language: C++17
 // Verdict: Accepted
 // URL: https://codeforces.com/problemset/problem/1238/A
-// Solved on: 2026-11-12T04:30:08.249Z
+// Solved on: 2026-11-12T04:30:23.083Z
 
 #include<bits/stdc++.h>
 using namespace std;
