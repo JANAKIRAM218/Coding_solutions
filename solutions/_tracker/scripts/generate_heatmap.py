@@ -8,29 +8,36 @@ today = date.today()
 start = today - timedelta(days=364)
 start -= timedelta(days=start.weekday())
 
-# Count commits affecting platform solution directories, including
-# the original paths so Git history from before reorganization remains visible.
+# Count commits that change solution files in every platform directory.
+# Include both the current and legacy directory layouts.
+solution_paths = [
+    "solutions/AtCoder",
+    "solutions/NxtWave",
+    "solutions/Codeforces",
+    "solutions/LeetCode",
+    "solutions/CodeChef",
+    "solutions/HackerRank",
+    "solutions/GeeksforGeeks",
+    "solutions/atcoder",
+    "solutions/nxtwave",
+    "atcoder",
+    "nxtwave",
+    "codeforces",
+    "leetcode",
+    "launchpad.ccbp.in",
+]
+
 result = subprocess.run(
     [
         "git", "log", "--all",
         "--format=%cs",
         "--since=1 year ago",
         "--",
-        "solutions/AtCoder",
-        "solutions/NxtWave",
-        "solutions/Codeforces",
-        "solutions/LeetCode",
-        "solutions/CodeChef",
-        "solutions/HackerRank",
-        "solutions/GeeksforGeeks",
-        "solutions/atcoder",
-        "solutions/nxtwave",
-        "atcoder",
-        "nxtwave"
+        *solution_paths,
     ],
     capture_output=True,
     text=True,
-    check=True
+    check=True,
 )
 
 commits = Counter(
@@ -44,7 +51,7 @@ colors = [
     "#0e4429",
     "#006d32",
     "#26a641",
-    "#39d353"
+    "#39d353",
 ]
 
 cells = []
