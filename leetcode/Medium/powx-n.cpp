@@ -1,10 +1,11 @@
 // Problem: Pow(x, n)
 // Platform: leetcode
+// Contest: Medium
 // Rating/Difficulty: Medium
-// Language: cpp
+// Language: C++17
 // Verdict: Accepted
-// URL: https://leetcode.com/problems/powx-n/
-// Solved on: 2026-11-16T06:06:36.796Z
+// URL: https://leetcode.com/problems/powx-n/description/
+// Solved on: 2026-11-16T06:10:23.724Z
 
 
 class Solution {
