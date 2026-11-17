@@ -1,10 +1,11 @@
 // Problem: Number of Common Factors
 // Platform: leetcode
+// Contest: Easy
 // Rating/Difficulty: Easy
-// Language: cpp
+// Language: C++17
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/number-of-common-factors/
-// Solved on: 2026-11-17T04:32:21.842Z
+// Solved on: 2026-11-17T04:32:41.248Z
 
 class Solution {
 public:
