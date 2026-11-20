@@ -1,0 +1,39 @@
+// Problem: Super Pow
+// Platform: leetcode
+// Rating/Difficulty: Medium
+// Language: cpp
+// Verdict: Accepted
+// URL: https://leetcode.com/problems/super-pow/
+// Solved on: 2026-11-20T05:00:55.047Z
+
+class Solution {
+public:
+    int mod = 1337;
+
+    int superPow(int a, vector<int>& b) {
+        int result = 1;
+        a %= mod;
+
+        for (int digit : b) {
+            result = (power(result, 10) * power(a, digit)) % mod;
+        }
+
+        return result;
+    }
+
+    int power(int a, int b) {
+        int result = 1;
+        a %= mod;
+
+        while (b > 0) {
+            if (b % 2 == 1) {
+                result = (result * a) % mod;
+            }
+
+            a = (a * a) % mod;
+            b /= 2;
+        }
+
+        return result;
+    }
+};
