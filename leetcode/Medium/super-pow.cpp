@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/super-pow/
-// Solved on: 2026-11-20T05:00:55.047Z
+// Solved on: 2026-11-21T04:15:08.043Z
 
 class Solution {
 public:
