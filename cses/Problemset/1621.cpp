@@ -3,7 +3,7 @@
 // Language: unknown
 // Verdict: ACCEPTED
 // URL: https://cses.fi/problemset/result/19436160/
-// Solved on: 2026-11-24T14:14:12.149Z
+// Solved on: 2026-11-24T14:41:59.708Z
 
 #include<bits/stdc++.h>
 using namespace std;
