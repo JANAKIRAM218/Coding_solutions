@@ -2,14 +2,14 @@
 // Platform: cses
 // Language: unknown
 // Verdict: ACCEPTED
-// URL: https://cses.fi/problemset/result/19436090/
-// Solved on: 2026-11-24T14:07:35.248Z
+// URL: https://cses.fi/problemset/result/19436105/
+// Solved on: 2026-11-24T14:08:51.907Z
 
 #include<bits/stdc++.h>
 using namespace std;
  
 int main() {
-    int n;
+    long long  n;
     cin>>n;
     cout<<n<<" ";
     while(true){
