@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/min-stack/
-// Solved on: 2026-11-20T05:47:10.684Z
+// Solved on: 2026-11-24T09:12:46.939Z
 
 class MinStack {
 public:
