@@ -2,26 +2,22 @@
 // Platform: cses
 // Language: unknown
 // Verdict: ACCEPTED
-// URL: https://cses.fi/problemset/result/19436516/
-// Solved on: 2026-11-24T15:05:09.718Z
+// URL: https://cses.fi/problemset/result/19436625/
+// Solved on: 2026-11-24T15:19:02.021Z
 
 n=int(input())
-if(n<=3):
+if(n==1):
+    print(1)
+elif(n<=3):
     print("NO SOLUTION")
 else:
-    first=[]
-    f=2
-    s=n 
-    second=[]
+    f=n-1 
+    while(f>0):
+        print(f,end=" ")
+        f-=2
+    s=n
     while(s>0):
-        second.append(s)
+        print(s,end=' ')
         s-=2
-    while(f<n):
-        first.append(f)
-        f+=2
-        
-final=first[::-1]+second
-for i in final:
-    print(i,end=" ")
 
         
