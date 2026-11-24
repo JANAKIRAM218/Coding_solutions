@@ -2,22 +2,33 @@
 // Platform: cses
 // Language: unknown
 // Verdict: ACCEPTED
-// URL: https://cses.fi/problemset/result/19436160/
-// Solved on: 2026-11-24T14:41:59.708Z
+// URL: https://cses.fi/problemset/result/19436377/
+// Solved on: 2026-11-24T14:45:25.756Z
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
- 
+
 int main() {
-    long long  n;
-    cin>>n;
-    unordered_set<long long > un;
-    for(int i=0;i<n;i++){
-        long long  ele;
-        cin>>ele;
-        un.insert(ele);
+    int n;
+    cin >> n;
+
+    vector<int> arr(n);
+
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
-    cout<<un.size()<<endl;
- 
-  return 0;
+
+    sort(arr.begin(), arr.end());
+
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (i == 0 || arr[i] != arr[i - 1]) {
+            count++;
+        }
+    }
+
+    cout << count << endl;
+
+    return 0;
 }
