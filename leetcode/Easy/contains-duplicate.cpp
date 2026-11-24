@@ -1,10 +1,11 @@
 // Problem: Contains Duplicate
 // Platform: leetcode
+// Contest: Easy
 // Rating/Difficulty: Easy
-// Language: cpp
+// Language: C++17
 // Verdict: Accepted
-// URL: https://leetcode.com/problems/contains-duplicate/
-// Solved on: 2026-11-24T08:13:29.940Z
+// URL: https://leetcode.com/problems/contains-duplicate/submissions/2029326668/
+// Solved on: 2026-11-24T08:14:07.096Z
 
 class Solution {
 public:
