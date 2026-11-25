@@ -2,22 +2,7 @@
 // Platform: cses
 // Language: unknown
 // Verdict: ACCEPTED
-// URL: https://cses.fi/problemset/result/19440160/
-// Solved on: 2026-11-25T05:42:56.118Z
+// URL: https://cses.fi/problemset/result/19436160/
+// Solved on: 2026-11-25T05:44:35.861Z
 
-#include<bits/stdc++.h>
-using namespace std;
- 
-int main() {
-    int n;
-    cin>>n;
-    map<int,int>mp;
-    for(int i=0;i<n;i++){
-        int ele;
-        cin>>ele;
-        mp[ele]++;
-    }
-    cout<<mp.size()<<endl;
- 
-  return 0;
-}
+#include<bits/stdc++.h>using namespace std; int main() {    long long  n;    cin>>n;    unordered_set<long long > un;    for(int i=0;i<n;i++){        long long  ele;        cin>>ele;        un.insert(ele);    }    cout<<un.size()<<endl;   return 0;}
