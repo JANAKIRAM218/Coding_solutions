@@ -4,37 +4,29 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/next-greater-element-ii/
-// Solved on: 2026-11-25T14:58:12.099Z
+// Solved on: 2026-11-26T05:34:47.588Z
 
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
-        vector<int> res;
-        for (int i=0;i<nums.size();i++){
-            bool check=true;
-            for (int j=i;j<nums.size();j++){
-                if(nums[j]>nums[i]){
-                    res.push_back(nums[j]);
-                    check=false;
-                    break;
-                }
-
-
+        int n=nums.size();
+        vector<int> ans;
+        nums.insert(nums.end(),nums.begin(),nums.end());
+        stack<int> stk;
+        for(int i=nums.size()-1;i>=0;i--){
+            while(!stk.empty() && stk.top()<=nums[i]){
+                stk.pop();
             }
-            if(check){
-                for (int k=0;k<i;k++){
-                    if(nums[k]>nums[i]){
-                        res.push_back(nums[k]);
-                        check=false;
-                        break;
-                    }
-                }
+            if(!stk.empty()){
+                ans.push_back(stk.top());
             }
-
-            if(check){
-                res.push_back(-1);
+            else{
+                ans.push_back(-1);
             }
+            stk.push(nums[i]);
         }
-        return res;
+        reverse(ans.begin(),ans.end());
+        vector<int> sub(ans.begin(),ans.begin()+n);
+        return sub;
     }
 };
